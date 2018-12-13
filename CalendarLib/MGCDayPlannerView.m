@@ -851,7 +851,7 @@ static const CGFloat kMaxHourSlotHeight = 150.;
 {
     if (!_timedEventsView) {
 		_timedEventsView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.timedEventsViewLayout];
-		_timedEventsView.backgroundColor = [UIColor clearColor];
+		_timedEventsView.backgroundColor = [UIColor colorWithWhite:.9 alpha:.5];
 		_timedEventsView.dataSource = self;
 		_timedEventsView.delegate = self;
 		_timedEventsView.showsVerticalScrollIndicator = NO;
