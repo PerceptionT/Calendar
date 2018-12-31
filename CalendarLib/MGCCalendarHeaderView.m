@@ -130,56 +130,15 @@ static CGFloat kItemHeight = 60;
 
 #pragma mark - Private methods
 
--(NSArray*)daysThisWeek:(NSDate *)date
-{
-    return  [self daysInWeek:0 fromDate:date];
-}
-
--(NSArray*)daysNextWeek:(NSDate *)date
-{
-    return  [self daysInWeek:1 fromDate:date];
-}
-
--(NSArray*)daysPreviousWeek:(NSDate *)date
-{
-    return  [self daysInWeek:-1 fromDate:date];
-}
-
--(NSArray*)daysInWeek:(int)weekOffset fromDate:(NSDate*)date
-{
-    
-    //ask for current week
-    NSDateComponents *comps = [[NSDateComponents alloc] init];
-    comps=[self.calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
-    //create date on week start
-    NSDate* weekstart=[self.calendar dateFromComponents:comps];
-    
-    NSDateComponents* moveWeeks=[[NSDateComponents alloc] init];
-    moveWeeks.weekOfYear=weekOffset;
-    weekstart=[self.calendar dateByAddingComponents:moveWeeks toDate:weekstart options:0];
-    
-    
-    //add 7 days
-    NSMutableArray* week=[NSMutableArray arrayWithCapacity:7];
-    for (int i=1; i<=7; i++) {
-        NSDateComponents *compsToAdd = [[NSDateComponents alloc] init];
-        compsToAdd.day=i;
-        NSDate *nextDate = [self.calendar dateByAddingComponents:compsToAdd toDate:weekstart options:0];
-        [week addObject:nextDate];
-        
-    }
-    return [NSArray arrayWithArray:week];
-}
-
 - (NSArray*)weekDaysFromDate:(NSDate*)date
 {
     NSDateComponents* components = [self.calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     
     NSMutableArray* weekDaysDates = [NSMutableArray array];
-    [components setWeekday:1];
+   
     //iterate to fill the dates of the week days
     for (int i = 1; i <= 7; i++) { //1 is the comopnent for the first day of week 7 the last
-        
+         [components setWeekday:i];
         NSDate* date = [self.calendar dateFromComponents:components];
         [weekDaysDates addObject:date];
     }
@@ -189,11 +148,21 @@ static CGFloat kItemHeight = 60;
 
 - (void)setupWeekDates{
     
-    self.currentWeekDates = [self daysThisWeek:self.selectedDate];
-    self.nextWeekDates = [self daysNextWeek:self.selectedDate];
-    self.previousWeekDates = [self daysPreviousWeek:self.selectedDate];
-   
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    
+    components.weekOfYear = self.weekIndex;
+    NSDate *currentWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    self.currentWeekDates = [self weekDaysFromDate:currentWeekDate];
+    
+    components.weekOfYear = self.weekIndex + 1;
+    NSDate *nextWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    self.nextWeekDates = [self weekDaysFromDate:nextWeekDate];
+    
+    components.weekOfYear = self.weekIndex - 1;
+    NSDate *previousWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    self.previousWeekDates = [self weekDaysFromDate:previousWeekDate];
 }
+
 
 #pragma mark - Public methods
 
