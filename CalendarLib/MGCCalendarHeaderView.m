@@ -135,7 +135,7 @@ static CGFloat kItemHeight = 60;
     NSDateComponents* components = [self.calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitWeekday | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date1];
     
     NSMutableArray* weekDaysDates = [NSMutableArray array];
-    [components setWeekday:1];
+    [components setDay:1];
     //iterate to fill the dates of the week days
     for (int i = 1; i <= 7; i++) { //1 is the comopnent for the first day of week 7 the last
         
