@@ -150,8 +150,8 @@
 /* Begin PBXFileReference section */
 		001A15F2F9F1B012C05D7442E6806F1C /* MGCMonthPlannerBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCMonthPlannerBackgroundView.h; path = CalendarLib/MGCMonthPlannerBackgroundView.h; sourceTree = "<group>"; };
 		004BFA49482CBC13436BBD546C686595 /* MGCEventKitSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCEventKitSupport.m; path = CalendarLib/MGCEventKitSupport.m; sourceTree = "<group>"; };
-		02D048AD27994C599C20C9B3F2E9C90F /* CalendarLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CalendarLib.framework; path = CalendarLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049B0A7E0693685AA8D7FB61DD0A30E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		02D048AD27994C599C20C9B3F2E9C90F /* CalendarLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049B0A7E0693685AA8D7FB61DD0A30E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05284D573652153DC46870ACA40D1222 /* MGCEventView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCEventView.h; path = CalendarLib/MGCEventView.h; sourceTree = "<group>"; };
 		0619E55AFA4656FD96954592C39F4E3A /* MGCDayPlannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCDayPlannerView.m; path = CalendarLib/MGCDayPlannerView.m; sourceTree = "<group>"; };
 		06B74139A6CB082B93EFEFF43C8EEC2D /* MGCEventKitSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCEventKitSupport.h; path = CalendarLib/MGCEventKitSupport.h; sourceTree = "<group>"; };
@@ -168,17 +168,17 @@
 		19CDD1F942424E96590D8F1BAC6FC1FD /* MGCYearCalendarMonthHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCYearCalendarMonthHeaderView.m; path = CalendarLib/MGCYearCalendarMonthHeaderView.m; sourceTree = "<group>"; };
 		1AFCBFFFE650885299AAAB0F88EB776A /* MGCCalendarHeaderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCCalendarHeaderCell.h; path = CalendarLib/MGCCalendarHeaderCell.h; sourceTree = "<group>"; };
 		1BAFACCE65FD87645066C09ABE0F7A33 /* MGCMonthPlannerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCMonthPlannerViewController.m; path = CalendarLib/MGCMonthPlannerViewController.m; sourceTree = "<group>"; };
-		1BE1C1902C67D3B9091E0D9E1BCA6A1C /* CalendarLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CalendarLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1BE1C1902C67D3B9091E0D9E1BCA6A1C /* CalendarLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CalendarLib.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		1C37C7534CAE88E411C13EDBD8A108BB /* MGCEventCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCEventCell.m; path = CalendarLib/MGCEventCell.m; sourceTree = "<group>"; };
 		23458970FF409817F353701C5BAA5299 /* MGCMonthPlannerHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCMonthPlannerHeaderView.m; path = CalendarLib/MGCMonthPlannerHeaderView.m; sourceTree = "<group>"; };
 		28FB3B8EC94E5D93D08B31D197F12B87 /* OrderedDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OrderedDictionary-prefix.pch"; sourceTree = "<group>"; };
 		2928204678785C6940A81B43EE2C5FF6 /* OrderedDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OrderedDictionary-umbrella.h"; sourceTree = "<group>"; };
 		2BE2EA39F8FE5E48E7B9712F35754B74 /* OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OrderedDictionary.m; path = OrderedDictionary/OrderedDictionary.m; sourceTree = "<group>"; };
 		2CECB2B350809E1E9DBE9494FD7E0FB3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
-		32F5738899362CE6DA47E17E86DE005E /* CalendarLib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalendarLib.bundle; path = "CalendarLib-CalendarLib.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F5738899362CE6DA47E17E86DE005E /* CalendarLib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarLib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3517BD1053A5DDAA0D7C19AE5909EEED /* MGCEventCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCEventCell.h; path = CalendarLib/MGCEventCell.h; sourceTree = "<group>"; };
 		3A6C25461DE89F87A2DE258B6D0F98E3 /* OSCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OSCache.modulemap; sourceTree = "<group>"; };
-		3CA7868ECFE3F9C8F2725CE912463807 /* OrderedDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OrderedDictionary.framework; path = OrderedDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA7868ECFE3F9C8F2725CE912463807 /* OrderedDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE26E63834D991CA0CFD24865B80BBE /* MGCMonthPlannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCMonthPlannerView.m; path = CalendarLib/MGCMonthPlannerView.m; sourceTree = "<group>"; };
 		427247CEB53234847371B13208EDA5F8 /* MGCDayColumnCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCDayColumnCell.m; path = CalendarLib/MGCDayColumnCell.m; sourceTree = "<group>"; };
 		47116B41DC8DBBF9800915619CBF0B4B /* MGCMonthPlannerBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCMonthPlannerBackgroundView.m; path = CalendarLib/MGCMonthPlannerBackgroundView.m; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		5B200BDE97754B80602618DCB1ED6D95 /* MGCEventsRowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCEventsRowView.m; path = CalendarLib/MGCEventsRowView.m; sourceTree = "<group>"; };
 		5B5CE9FAFB25AD1FFBCA09B9681D73CC /* MGCDayPlannerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCDayPlannerViewController.h; path = CalendarLib/MGCDayPlannerViewController.h; sourceTree = "<group>"; };
 		5C28D43A8625852B3A38DA3F2778F33B /* MGCYearCalendarMonthCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCYearCalendarMonthCell.m; path = CalendarLib/MGCYearCalendarMonthCell.m; sourceTree = "<group>"; };
-		5D814A65FF508F2DC3EB46B803BD1BE9 /* OSCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OSCache.framework; path = OSCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D814A65FF508F2DC3EB46B803BD1BE9 /* OSCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDD22944370A3C35D8C59D82C9FF7CD /* MGCMonthPlannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCMonthPlannerView.h; path = CalendarLib/MGCMonthPlannerView.h; sourceTree = "<group>"; };
 		5F3998409EABCDE6A44F21A0D452D94B /* MGCEventCellLayoutAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCEventCellLayoutAttributes.m; path = CalendarLib/MGCEventCellLayoutAttributes.m; sourceTree = "<group>"; };
 		631575BA804A2858CDE1D1617F3D705A /* Pods-CalendarDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalendarDemo-dummy.m"; sourceTree = "<group>"; };
@@ -223,19 +223,19 @@
 		8FD45EAE4FADEF77E9888E348DCFA571 /* MGCDayColumnCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCDayColumnCell.h; path = CalendarLib/MGCDayColumnCell.h; sourceTree = "<group>"; };
 		96A81FFF27CA1D74C3B675EB83311B4B /* CalendarLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CalendarLib-prefix.pch"; sourceTree = "<group>"; };
 		96DC3974C04B594E63669FABB3A28403 /* MGCAlignedGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCAlignedGeometry.h; path = CalendarLib/MGCAlignedGeometry.h; sourceTree = "<group>"; };
-		96F968608B32D2A92938B3492BB32983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		96F968608B32D2A92938B3492BB32983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9A00CB98D6A7A94BF7A9E1F0445797A9 /* MGCYearCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCYearCalendarView.m; path = CalendarLib/MGCYearCalendarView.m; sourceTree = "<group>"; };
 		9AE5B105FC2BDD884E30A682AD557EDD /* MGCMonthPlannerWeekView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCMonthPlannerWeekView.h; path = CalendarLib/MGCMonthPlannerWeekView.h; sourceTree = "<group>"; };
 		9B4111AA329623200676AC1DE00BD78D /* MGCMonthPlannerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCMonthPlannerViewController.h; path = CalendarLib/MGCMonthPlannerViewController.h; sourceTree = "<group>"; };
 		9B9BC51474DD6B1F2C3B148C030A3F67 /* MGCReusableObjectQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCReusableObjectQueue.m; path = CalendarLib/MGCReusableObjectQueue.m; sourceTree = "<group>"; };
 		9CD86099F7588F94292FC282319C6429 /* MGCCalendarHeaderCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MGCCalendarHeaderCell.xib; path = CalendarLib/MGCCalendarHeaderCell.xib; sourceTree = "<group>"; };
 		9E32D2EA99FA0752F7E47F8C17EAC4A2 /* Constant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = CalendarLib/Constant.h; sourceTree = "<group>"; };
-		A163391E3CF857C53CDB579373DB27CA /* Pods_CalendarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CalendarDemo.framework; path = "Pods-CalendarDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3A690C6DE8AE8C3592D3EE19281E7CF /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = CalendarLib/fr.lproj; sourceTree = "<group>"; };
+		A163391E3CF857C53CDB579373DB27CA /* Pods_CalendarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A690C6DE8AE8C3592D3EE19281E7CF /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = CalendarLib/fr.lproj; sourceTree = "<group>"; };
 		A5B455A091CE4CC2462394FD8E75817D /* MGCMonthPlannerHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGCMonthPlannerHeaderView.h; path = CalendarLib/MGCMonthPlannerHeaderView.h; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B7389A1F917B8D5C8EE9C0679748D585 /* MGCInteractiveEventView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCInteractiveEventView.m; path = CalendarLib/MGCInteractiveEventView.m; sourceTree = "<group>"; };
-		B88C04E33E31B52832971046894B12E5 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = CalendarLib/en.lproj; sourceTree = "<group>"; };
+		B88C04E33E31B52832971046894B12E5 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = CalendarLib/en.lproj; sourceTree = "<group>"; };
 		BACF479068D9753F4992C7A9118471B6 /* MGCMonthPlannerViewDayCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGCMonthPlannerViewDayCell.m; path = CalendarLib/MGCMonthPlannerViewDayCell.m; sourceTree = "<group>"; };
 		BB4BBD89758849BDB5D33B8E6188E519 /* CalendarLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CalendarLib-Info.plist"; sourceTree = "<group>"; };
 		BBDB977B54682F4F929DF9BF06AFD337 /* NSAttributedString+MGCAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+MGCAdditions.m"; path = "CalendarLib/NSAttributedString+MGCAdditions.m"; sourceTree = "<group>"; };
@@ -332,7 +332,6 @@
 				7B109FCF8326A98A81D6FE07BA9A2CE3 /* OSCache.m */,
 				FAB41FBC1BA19800C28E17B9A45DEF4F /* Support Files */,
 			);
-			name = OSCache;
 			path = OSCache;
 			sourceTree = "<group>";
 		};
@@ -437,7 +436,6 @@
 				2BE2EA39F8FE5E48E7B9712F35754B74 /* OrderedDictionary.m */,
 				89583D11A5AF498119B33CA0B5DE4F5A /* Support Files */,
 			);
-			name = OrderedDictionary;
 			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
@@ -1261,8 +1259,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
