@@ -150,15 +150,15 @@ static CGFloat kItemHeight = 60;
 - (void)setupWeekDates{
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    components.weekOfYear = self.weekIndex;
+    components.weekOfYear = 0;
     NSDate *currentWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
     self.currentWeekDates = [self weekDaysFromDate:currentWeekDate];
     
-    components.weekOfYear = self.weekIndex + 1;
+    components.weekOfYear = 1;
     NSDate *nextWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
     self.nextWeekDates = [self weekDaysFromDate:nextWeekDate];
     
-    components.weekOfYear = self.weekIndex - 1;
+    components.weekOfYear = -1;
     NSDate *previousWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
     self.previousWeekDates = [self weekDaysFromDate:previousWeekDate];
 }
