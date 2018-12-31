@@ -130,16 +130,17 @@ static CGFloat kItemHeight = 60;
 
 #pragma mark - Private methods
 
-- (NSArray*)weekDaysFromDate:(NSDate*)date
+- (NSArray*)weekDaysFromDate:(NSDate*)date1
 {
-    NSDateComponents* components = [self.calendar components:(NSCalendarUnitYear | NSCalendarUnitWeekOfYear) fromDate:date];
+   
     
     NSMutableArray* weekDaysDates = [NSMutableArray array];
    
     //iterate to fill the dates of the week days
     for (int i = 1; i <= 7; i++) { //1 is the comopnent for the first day of week 7 the last
+         NSDateComponents* components = [self.calendar components:(NSCalendarUnitYear | NSCalendarUnitWeekOfYear) fromDate:date1];
          [components setWeekday:i];
-        NSDate* date = [self.calendar dateFromComponents:components];
+        NSDate* date = [self.calendar dateByAddingComponents:components toDate:date1 options:0];
         [weekDaysDates addObject:date];
     }
     
@@ -149,17 +150,18 @@ static CGFloat kItemHeight = 60;
 - (void)setupWeekDates{
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
+    components=[self.calendar components:NSCalendarUnitWeekOfYear|NSCalendarUnitYear fromDate:self.selectedDate];
     
     components.weekOfYear = 0;
-    NSDate *currentWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    NSDate *currentWeekDate = [self.calendar dateFromComponents:components];
     self.currentWeekDates = [self weekDaysFromDate:currentWeekDate];
     
     components.weekOfYear = 1;
-    NSDate *nextWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    NSDate *nextWeekDate = [self.calendar dateFromComponents:components];
     self.nextWeekDates = [self weekDaysFromDate:nextWeekDate];
     
     components.weekOfYear = -1;
-    NSDate *previousWeekDate = [self.calendar dateByAddingComponents:components toDate:self.selectedDate options:0];
+    NSDate *previousWeekDate = [self.calendar dateFromComponents:components];
     self.previousWeekDates = [self weekDaysFromDate:previousWeekDate];
 }
 
